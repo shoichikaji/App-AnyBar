@@ -1,27 +1,33 @@
-[![Build Status](https://travis-ci.org/shoichikaji/App-AnyBar.svg?branch=master)](https://travis-ci.org/shoichikaji/App-AnyBar)
+# App::AnyBar [![Build Status](https://travis-ci.org/shoichikaji/App-AnyBar.svg?branch=master)](https://travis-ci.org/shoichikaji/App-AnyBar)
 
-# NAME
+App::AnyBar is a perl client for [AnyBar](https://github.com/tonsky/AnyBar).
 
-App::AnyBar - a perl client for AnyBar
+## Install
 
-# SYNOPSIS
+Make sure you have [cpanm](https://github.com/miyagawa/cpanminus).
+If not, install it first:
 
-    use App::AnyBar;
-    my $anybar = App::AnyBar->new;
-    $anybar->color('red');
-    $anybar->quit;
+```sh
+$ curl -sL http://cpanmin.us | perl - -nq App::cpanminus
+```
 
-# DESCRIPTION
+Then:
 
-App::AnyBar is a perl client for [https://github.com/tonsky/AnyBar](https://github.com/tonsky/AnyBar).
+```sh
+$ cpanm -nq git://github.com/shoichikaji/App-AnyBar.git
+```
 
-# SEE ALSO
+## Usage
 
-[https://github.com/tonsky/AnyBar](https://github.com/tonsky/AnyBar)
+```perl
+use App::AnyBar;
+my $anybar = App::AnyBar->new;
+$anybar->color('red');
+$anybar->quit;
+```
 
-# COPYRIGHT AND LICENSE
+## License
 
-Copyright 2016 Shoichi Kaji &lt;skaji@cpan.org>
+Copyright (c) 2016 Shoichi Kaji
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This software is licensed under the same terms as Perl.
